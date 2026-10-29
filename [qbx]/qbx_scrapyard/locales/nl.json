@@ -1,0 +1,21 @@
+{
+    "error": {
+        "scrap_owned": "Je kunt geen voertuigen slopen die eigendom zijn van spelers.",
+        "cannot_scrap": "Dit voertuig kan niet worden gesloopt.",
+        "not_driver": "Jij bent niet de bestuurder",
+        "scrap_vehicle": "Het is nu niet toegestaan om voertuigen te slopen",
+        "canceled": "Geannuleerd"
+    },
+    "text": {
+        "disassemble_vehicle": "[E] - Voertuig demonteren",
+        "email_list": "[E] - E-maillijst met voertuigen",
+        "email_list_target": "E-maillijst met voertuigen",
+        "scrap_vehicle": "Voertuig slopen",
+        "email_sent": "Je ontvangt de lijst binnen enkele seconden per e-mail"
+    },
+    "email": {
+        "sender": "Turner’s Autosloop",
+        "subject": "Voertuiglijst",
+        "message": "Je kunt slechts een aantal voertuigen slopen.<br />Je kunt alles wat je sloopt voor jezelf houden zolang je mij er niet mee lastig valt.<br /><br /><strong>Voertuiglijst:</strong><br />"
+    }
+}

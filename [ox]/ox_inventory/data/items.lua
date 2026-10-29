@@ -643,4 +643,40 @@ return {
         label = 'Handcuffs',
         weight = 200,
     },
+
+    ['phone_iphone'] = {
+    label = 'iPhone 15 Pro',
+    weight = 200,
+    stack = false,
+    close = true,
+    description = 'Apple smartphone running iOS',
+    client = { image = 'phone_iphone.png' }
+    },
+
+    ['phone_samsung'] = {
+    label = 'Samsung Galaxy S24',
+    weight = 200,
+    stack = false,
+    close = true,
+    description = 'Flagship Android smartphone',
+    client = { image = 'phone_samsung.png' }
+    },
+
+    ['phone_fold'] = {
+    label = 'Samsung Z Fold',
+    weight = 300,
+    stack = false,
+    close = true,
+    description = 'Foldable dual-screen smartphone',
+    client = { image = 'phone_fold.png' }
+    },
+
+    ['phone_vivo'] = {
+    label = 'Vivo Smartphone',
+    weight = 180,
+    stack = false,
+    close = true,
+    description = 'Budget Android smartphone',
+    client = { image = 'phone_vivo.png' }
+    },
 }

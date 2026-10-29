@@ -644,13 +644,16 @@ return {
         weight = 200,
     },
 
-    ['phone_iphone'] = {
+   ['phone_iphone'] = {
     label = 'iPhone 15 Pro',
     weight = 200,
     stack = false,
     close = true,
     description = 'Apple smartphone running iOS',
-    client = { image = 'phone_iphone.png' }
+    client = {
+        image = 'phone_iphone.png',
+        export = 'lb-phone.UsePhoneItem'
+        }
     },
 
     ['phone_samsung'] = {
@@ -659,7 +662,10 @@ return {
     stack = false,
     close = true,
     description = 'Flagship Android smartphone',
-    client = { image = 'phone_samsung.png' }
+    client = {
+        image = 'phone_samsung.png',
+        export = 'lb-phone.UsePhoneItem'
+        }
     },
 
     ['phone_fold'] = {
@@ -668,15 +674,9 @@ return {
     stack = false,
     close = true,
     description = 'Foldable dual-screen smartphone',
-    client = { image = 'phone_fold.png' }
-    },
-
-    ['phone_vivo'] = {
-    label = 'Vivo Smartphone',
-    weight = 180,
-    stack = false,
-    close = true,
-    description = 'Budget Android smartphone',
-    client = { image = 'phone_vivo.png' }
+    client = {
+        image = 'phone_fold.png',
+        export = 'lb-phone.UsePhoneItem'
+        }
     },
 }

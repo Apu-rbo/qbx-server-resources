@@ -31,7 +31,7 @@ Config.DatabaseChecker.Enabled = false -- if true, the phone will check the data
 Config.DatabaseChecker.AutoFix = false
 
 --[[ FRAMEWORK OPTIONS ]] --
-Config.Framework = "auto"
+Config.Framework = "qbox"
 --[[
     Supported frameworks:
         * auto: auto-detect framework
@@ -49,7 +49,34 @@ Config.QBOldJobMethod = false -- use the old method to check job in qb-core? thi
 Config.Item = {}
 -- If you want to set up multiple items & frame colours, see https://docs.lbscripts.com/phone/configuration/#multiple-items--colored-phones
 Config.Item.Require = true -- require a phone item to use the phone
-Config.Item.Name = "phone" -- name of the phone item
+--Config.Item.Name = "phone_iphone" -- Default fallback item
+
+Config.Item.Names = {
+    {
+        name = "phone_iphone",
+        model = `lb_phone_prop`,
+        rotation = vector3(0.0, 0.0, 180.0),
+        offset = vector3(0.0, -0.005, 0.0),
+        landscapeOffset = vector3(-0.03, -0.005, -0.02),
+        landscapeRotation = vector3(0.0, 90.0, 180.0)
+    },
+    {
+        name = "phone_samsung",
+        model = `lb_phone_prop`, 
+        rotation = vector3(0.0, 0.0, 180.0),
+        offset = vector3(0.0, -0.005, 0.0),
+        landscapeOffset = vector3(-0.03, -0.005, -0.02),
+        landscapeRotation = vector3(0.0, 90.0, 180.0)
+    },
+    {
+        name = "phone_fold",
+        model = `lb_phone_prop`,
+        rotation = vector3(0.0, 0.0, 180.0),
+        offset = vector3(0.0, -0.005, 0.0),
+        landscapeOffset = vector3(-0.03, -0.005, -0.02),
+        landscapeRotation = vector3(0.0, 90.0, 180.0)
+    }
+}
 -- Config.Item.Names = {
 --     {
 --         name = "phone",
@@ -83,7 +110,7 @@ Config.Item.Name = "phone" -- name of the phone item
 -- }
 
 Config.Item.Unique = true -- should each phone be unique? https://docs.lbscripts.com/phone/configuration/#unique-phones
-Config.Item.Inventory = "auto" --[[
+Config.Item.Inventory = "ox_inventory" --[[
     The inventory you use, IGNORE IF YOU HAVE Config.Item.Unique DISABLED.
 
     Supported inventory scripts: (if you do not have one of the inventories below, you will have to leave Config.Item.Unique disabled)

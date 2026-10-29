@@ -1,3 +1,4 @@
+if not OnDeath then function OnDeath() end end
 -- ─── Native aliases ──────────────────────────────────────────
 local DisableControlAction = DisableControlAction
 local IsNuiFocused         = IsNuiFocused
@@ -658,7 +659,7 @@ end
 -- ============================================================
 local isTogglingOpen = false  -- re-entrancy guard (L9_1)
 
-local function ToggleOpen(open, keepFocus)
+function ToggleOpen(open, keepFocus)
     local calledBy = GetInvokingResource()
 
     -- Re-entrancy guard
@@ -1374,7 +1375,7 @@ LogOut = LogOut
 -- Switches the active phone number.  Resets phone state,
 -- notifies the server, and optionally triggers a new fetch.
 -- ============================================================
-local function SetPhone(phoneNumber, forceRefetch)
+function SetPhone(phoneNumber, forceRefetch)
     debugprint("SetPhone triggered", phoneNumber, forceRefetch)
 
     while true do
